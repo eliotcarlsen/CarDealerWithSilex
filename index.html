@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <title>Car Dealer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search our inventory</h1>
+      <form id="userInput" action="result.php">
+        <div class="form-group">
+          <label for="priceInput">What is your max price?</label>
+          <input id="priceInput" name="priceInput" class="form-control" type="number">
+        </div>
+        <div class="form-group">
+          <label for="milageInput">What is your max milage?</label>
+          <input id="milageInput" name="milageInput" class="form-control" type="number">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">Show me cars!</button>
+        </div>
+      </form>
+  </body>
+</html>

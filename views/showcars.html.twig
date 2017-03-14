@@ -1,0 +1,14 @@
+{% if old_cars is empty %}
+  <p>You're too picky about cars...</p>
+{% else %}
+  {% for old_car in old_cars %}
+  <li> {{ old_car.getMakeModel }} </li>
+  <ul>
+    <li> Price: {{ old_car.getPrice }} </li>
+    <li> Miles: {{ old_car.getMiles }} </li>
+  </ul>
+  <div class='row'>
+    <div class='col-md-6'>
+      <img src='{{ old_car.getCarPic }}'>;
+  {% endfor %}
+{% endif %}

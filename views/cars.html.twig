@@ -8,7 +8,7 @@
   <body>
     <div class="container">
       <h1>Search our inventory</h1>
-      <form id="userInput" action="/car">
+      <form id="userInput" action="/car" method="post">
         <div class="form-group">
           <label for="priceInput">What is your max price?</label>
           <input id="priceInput" name="priceInput" class="form-control" type="number">
@@ -20,6 +20,14 @@
         <div class="form-group">
           <button type="submit" class="btn btn-default">Show me cars!</button>
         </div>
+      </form>
+      <form action="/sellcar" >
+        <h1>Looking to Sell?</h1>
+        <button type="submit" name="btn btn-info">Enter</button>
+      </form>
+      <h1>Now show me <em>all</em> the cars</h1>
+      <form action="/inventory" method="post">
+        <button type="submit">Let's see!</button>
       </form>
   </body>
 </html>

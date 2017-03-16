@@ -55,5 +55,16 @@
             return $this->miles;
         }
 
+        function save()
+        {
+            array_push($_SESSION['all_cars'], $this);
+        }
+
+        static function getAll()
+        {
+            return $_SESSION['all_cars'];
+        }
     }
+
+
 ?>
